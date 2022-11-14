@@ -62,7 +62,7 @@ func main() {
 	r.Static("/static", "assets")
 	r.Validator = &CustomValidator{validator: validator.New()}
 	r.HTTPErrorHandler = customError
-	r.HTTPErrorHandler = errorPage
+	//r.HTTPErrorHandler = errorPage
 	r.Start(":9000")
 }
 
